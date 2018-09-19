@@ -21,3 +21,9 @@ In the same way Route 53 was used to distribute read queries across multiple rea
 1. Route 53 alias using latency based routing chooses a region closest to the user’s location.
 2. Elastic load balancer routes traffic to one of the application servers.
 3. Route 53 routes database read traffic from the application server to one of the read replicas in that region.
+
+## Resources
+
+[Amazon RDS Read Replicas](https://aws.amazon.com/rds/details/read-replicas/)
+
+[Working with Read Replicas of MariaDB, MySQL, and PostgreSQL DB Instances](https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/USER_ReadRepl.html)

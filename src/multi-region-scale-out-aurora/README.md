@@ -13,3 +13,11 @@ Aurora MySQL read replicas can also be used across regions to bring data closer 
 3. Database read traffic from the application server is sent to the cluster reader endpoint and is served by one of the read replicas in that region.
 
 Note that although a separate cluster is created in a different region, database write operations are still handled by the primary instance of the original cluster.
+
+## Resources
+
+[Replication with Amazon Aurora](https://docs.aws.amazon.com/AmazonRDS/latest/AuroraUserGuide/Aurora.Replication.html)
+
+[Replicating Amazon Aurora MySQL DB Clusters Across AWS Regions](https://docs.aws.amazon.com/AmazonRDS/latest/AuroraUserGuide/AuroraMySQL.Replication.CrossRegion.html)
+
+

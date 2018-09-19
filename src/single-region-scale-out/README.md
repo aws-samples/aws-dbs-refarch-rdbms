@@ -20,3 +20,11 @@ Amazon Route 53 can be used to create a single DNS endpoint that is used to dist
 
 1. An elastic load balancer routes traffic to one of the application servers.
 2. Route 53 routes database read traffic from the application server to one of the read replicas.
+
+## Resources
+
+[Amazon RDS Read Replicas](https://aws.amazon.com/rds/details/read-replicas/)
+
+[Working with Read Replicas of MariaDB, MySQL, and PostgreSQL DB Instances](https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/USER_ReadRepl.html)
+
+
