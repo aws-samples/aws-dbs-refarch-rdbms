@@ -41,10 +41,15 @@ Amazon Aurora (Aurora) is a fully managed relational database engine that's comp
 Amazon RDS  and Aurora is used as a highly available, no maintenance backend for operational systems. It has been a system of records for many e-commerce websites, ERP, CRM and HR systems where SQL databases widely used.
 
 - #### Small Size Analytic Data Stores
-Though, large scale data warehouses are not very common use case with RDS/Aurora, it is feasible to build solution with relational data database service on AWS. Many customers have created analytic solutions by using RDS as a data store due to its ease of use and scalability. However, it is recommended to use Amazon Redshift where a large enterprise data warehouse use case arises.
+Though, large scale data warehouses are not very common use case with RDS/Aurora, it is feasible to build solutions with relational data database service on AWS. Many customers have successfully deployed analytic solutions with RDS as a data store due to its ease of use and scalability. However, it is recommended to use Amazon Redshift where a large enterprise data warehouse use case arises.
 
 
 ## Data Modeling Principles
+Based on  type of workload your database is handling, the data model design techniques vary accordingly. 2 major data modeling techniques are widely used in the industry bases on type of workload and system that  your database is supporting.  
+
+- #### Normalized Schema Design (3NF)
+
+- #### De-normalized Schema Design (Star Schema)
 
 ## Deployment Architectures
 
