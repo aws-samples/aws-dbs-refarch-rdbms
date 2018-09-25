@@ -79,3 +79,8 @@ AWS Services are designed to work together, most AWS services are consistent in 
 ### [Multi-Region Scale Out Using Aurora Read Replicas](src/multi-region-scale-out-aurora)
 
 <table><tr><td><a href="src/multi-region-scale-out-aurora"><img src="src/multi-region-scale-out-aurora/thumbnail.png"/></a></td><td>Similar to the single region scale out example, Aurora read replicas can be scaled across regions by replicating data from one cluster to another.</td></tr></table>
+
+
+## License Summary
+
+This sample code is made available under a modified MIT license. See the LICENSE file.
