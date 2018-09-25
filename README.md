@@ -36,7 +36,7 @@ Though, large scale data warehouses are not very common use case with RDS/Aurora
 Based on  type of workload your database is handling, the data model design techniques vary accordingly. Nearly all rdbms systems use one of standard database modelling principles.  
 
 #### [Normalized Schema Design (3NF)](https://en.wikipedia.org/wiki/Database_normalization)
-<table><tr><td><a href="https://github.com/aws-samples/aws-dbs-refarch-rdbms/tree/master/src/relational-datamodel"><img src="https://raw.githubusercontent.com/aws-samples/aws-dbs-refarch-rdbms/master/src/relational-datamodel/relational_dm.png"/></a></td><td><ul><li>Normalized(3NF) data modeling principle is suitable for transactional systems. </li><li>
+<table><tr><td><a href="https://en.wikipedia.org/wiki/Database_normalization"><img src="https://raw.githubusercontent.com/aws-samples/aws-dbs-refarch-rdbms/master/src/relational-datamodel/relational_dm.png"/></a></td><td><ul><li>Normalized(3NF) data modeling principle is suitable for transactional systems. </li><li>
 Generally, the systems that has high amount of updates and inserts on small number of rows frequently use normalized schema design to support online transactional processing.</li> <li>Database systems that handle such workload are generally used as backend data store of e-commerce websites, ERP and  CRM systems etc.</li>
 </ul>
 </tr></td></tr></table>
