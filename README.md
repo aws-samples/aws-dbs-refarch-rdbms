@@ -51,7 +51,7 @@ Based on  type of workload your database is handling, the data model design tech
 <table><tr><td><a href="src/relational-datamodel"><img src="src/relational-datamodel/relational_dm.png"/></a></td><td><ul><li>Normalized(3NF) data modeling principle is suitable for transactional systems. </li><li>
 Generally, the systems that has high amount of updates and inserts on small number of rows frequently use normalized schema design to support online transactional processing.</li> <li>Database systems that handle such workload are generally used as backend data store of e-commerce websites, ERP and  CRM systems etc.</li>
 </ul>
-The diagram is an example of a relational data model design for a advertisement service.
+The diagram is an example of a relational data model design for an advertisement service.
  </td></tr></table>
 
 - #### De-normalized Schema Design (Star Schema)
