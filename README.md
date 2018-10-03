@@ -25,7 +25,7 @@ The following points illustrate how Aurora relates to the standard MySQL and Pos
 * Aurora management operations typically involve entire clusters of database servers that are synchronized through replication, instead of individual database instances. The automatic clustering, replication, and storage allocation make it simple and cost-effective to set up, operate, and scale your largest MySQL and PostgreSQL deployments.
 * You can bring data from Amazon RDS for MySQL and Amazon RDS for PostgreSQL into Aurora by creating and restoring snapshots, or by setting up one-way replication. You can use push-button migration tools to convert your existing Amazon RDS for MySQL and Amazon RDS for PostgreSQL applications to Aurora.
 
-## Use Cases
+## Use Cases 
 
 #### Operational Systems
 
@@ -33,18 +33,20 @@ Amazon RDS  and Aurora is used as a highly available, no maintenance backend for
 
 #### Small Size Analytic Data Stores
 
-Though, large scale data warehouses are not very common use case with RDS/Aurora, it is feasible to build solutions with relational data database service on AWS. Many customers have successfully deployed analytic solutions with RDS as a data store due to its ease of use and scalability. However, it is recommended to use Amazon Redshift where a large enterprise data warehouse use case arises.
+<p>Though, large scale data warehouses are not very common usecases for RDS/Aurora, it is feasible to build solutions with relational database service on AWS. Many customers have successfully deployed analytic solutions with RDS as the data store due to its ease of use and scalability. </p>
+
+Though, selection of an analytic database is dependent on many factors such as scalability, data volume, number of queries, type of queries  and data availability SLA etc, RDS is widely used by many of our customers for realtime operational reporting on the OLTP system. We  discourage using RDS master instances for operational reporting. Because, such implementations may compromize availability of the online system. However, it is recommended to use Amazon Redshift where a large enterprise data warehouse use case arises.
 
 ## Data Modeling Principles
 
-Based on  type of workload your database is handling, the data model design techniques vary accordingly. Nearly all rdbms systems use one of standard database modelling principles.  
+Based on the type of workload your database is handling, the data model design techniques vary accordingly. Nearly all rdbms systems that deal with online transaction processing workload use one of standard database modelling principles.  
 
-#### [Normalized Schema Design (3NF)](https://en.wikipedia.org/wiki/Database_normalization)
+#### [Online Transaction Processing:](https://en.wikipedia.org/wiki/Online_transaction_processing)
 
 <table><tr>
   <td><a href="https://en.wikipedia.org/wiki/Database_normalization"><img src="/src/relational-datamodel/relational_dm.png"/></a></td>
   <td><ul>
-    <li>Normalized(3NF) data modeling principle is suitable for transactional systems.</li>
+    <li>Normalized(3NF) (https://en.wikipedia.org/wiki/Database_normalization) data modeling principle is suitable for transactional systems.</li>
     <li>Generally, the systems that has high amount of updates and inserts on small number of rows frequently use normalized schema design to support online transactional processing.</li>
     <li>Database systems that handle such workload are generally used as backend data store of e-commerce websites, ERP and  CRM systems etc.</li>
   </ul></td>
