@@ -40,12 +40,12 @@ Selection of an analytic database is dependent on many factors such as scalabili
 
 Based on the type of workload your database is handling, the data model design techniques vary accordingly. Nearly all rdbms systems, that deal with online transaction processing, use one of standard database modelling principles.  
 
-#### [Online Transaction Processing](https://en.wikipedia.org/wiki/Online_transaction_processing)
+### [Online Transaction Processing](https://en.wikipedia.org/wiki/Online_transaction_processing)
 
 <table><tr>
   <td><a href="https://en.wikipedia.org/wiki/Database_normalization"><img src="/src/relational-datamodel/relational_dm.png"/></a></td>
   <td><ul>
-    <li>[Normalized(3NF)] (https://en.wikipedia.org/wiki/Database_normalization) data modeling principle is suitable for transactional systems.</li>
+    <li>Normalized(3NF) data modeling principle is suitable for transactional systems.</li>
     <li>Generally, the systems that has high amount of updates and inserts on small number of rows frequently use normalized schema design to support online transactional processing.</li>
     <li>Database systems that handle such workload are generally used as backend data store of e-commerce websites, ERP and  CRM systems etc.</li>
   </ul></td>
