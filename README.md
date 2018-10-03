@@ -38,7 +38,7 @@ Amazon RDS  and Aurora is used as a highly available, no maintenance backend for
 Selection of an analytic database is dependent on many factors such as scalability, data volume, query volume, type of queries  and data availability SLA etc. However, RDS is widely used by many of our customers for realtime operational reporting on the OLTP system. As a best practice, we  discourage using RDS master instances for operational reporting. Such implementations may compromize availability of the online system. 
 ## Data Modeling Principles
 
-Based on the type of workload your database is handling, the data model design techniques vary accordingly. Nearly all rdbms systems that deal with online transaction processing workload use one of standard database modelling principles.  
+Based on the type of workload your database is handling, the data model design techniques vary accordingly. Nearly all rdbms systems, that deal with online transaction processing, use one of standard database modelling principles.  
 
 #### [Online Transaction Processing:](https://en.wikipedia.org/wiki/Online_transaction_processing)
 
