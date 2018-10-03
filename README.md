@@ -33,10 +33,9 @@ Amazon RDS  and Aurora is used as a highly available, no maintenance backend for
 
 #### Small Size Analytic Data Stores
 
-<p>Though, large scale data warehouses are not very common usecases for RDS/Aurora, it is feasible to build solutions with relational database service on AWS. Many customers have successfully deployed analytic solutions with RDS as the data store due to its ease of use and scalability. </p>
+<p>Though, large scale data warehouses are not very common use cases for RDS/Aurora, it is not impossible to build solutions with relational database service on AWS. Many customers have successfully deployed analytic solutions with RDS as the data store due to its ease of use and scalability. </p>
 
-Though, selection of an analytic database is dependent on many factors such as scalability, data volume, number of queries, type of queries  and data availability SLA etc, RDS is widely used by many of our customers for realtime operational reporting on the OLTP system. We  discourage using RDS master instances for operational reporting. Because, such implementations may compromize availability of the online system. However, it is recommended to use Amazon Redshift where a large enterprise data warehouse use case arises.
-
+Selection of an analytic database is dependent on many factors such as scalability, data volume, query volume, type of queries  and data availability SLA etc. However, RDS is widely used by many of our customers for realtime operational reporting on the OLTP system. As a best practice, we  discourage using RDS master instances for operational reporting. Such implementations may compromize availability of the online system. 
 ## Data Modeling Principles
 
 Based on the type of workload your database is handling, the data model design techniques vary accordingly. Nearly all rdbms systems that deal with online transaction processing workload use one of standard database modelling principles.  
