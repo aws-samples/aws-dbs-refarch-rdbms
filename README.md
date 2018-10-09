@@ -76,6 +76,12 @@ AWS services are designed to work together, and most AWS services are consistent
 
 <table><tr><td><a href="/src/multi-region-scale-out-aurora"><img src="/src/multi-region-scale-out-aurora/thumbnail.png"/></a></td><td>Similar to the single region scale out example, Aurora read replicas can be scaled across regions by replicating data from one cluster to another.</td></tr></table>
 
+## Application Architectures
+
+### [Using Clone and Backtrack for Integration Testing](/src/clone-backtrack-testing)
+
+<table><tr><td><a href="/src/clone-backtrack-testing"><img src="/src/clone-backtrack-testing/thumbnail.png"/></a></td><td>Amazon Aurora supports powerful features to clone running databases in minutes, and to 'rewind' a database to any point in time using Aurora Backtrack. This can be a powerful capability to facilitate application architectures, for example service integration testing.</td></tr></table>
+
 ## License Summary
 
 This sample code is made available under a modified MIT license. See the LICENSE file.
