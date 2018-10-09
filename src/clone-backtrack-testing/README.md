@@ -23,6 +23,8 @@ Aurora clones give us a powerful mechanism to create copies of a production data
 
 ## Resources
 
-__Aurora Mysql__: https://docs.aws.amazon.com/AmazonRDS/latest/AuroraUserGuide/Aurora.AuroraMySQL.html
-__Clone API__: https://docs.aws.amazon.com/AmazonRDS/latest/APIReference/API_RestoreDBClusterToPointInTime.html
-__Backtrack API__: https://docs.aws.amazon.com/AmazonRDS/latest/APIReference/API_BacktrackDBCluster.html
+| Resource | Link |
+| :------- | :--- |
+| __Aurora Mysql__ | https://docs.aws.amazon.com/AmazonRDS/latest/AuroraUserGuide/Aurora.AuroraMySQL.html |
+| __Clone API__ | https://docs.aws.amazon.com/AmazonRDS/latest/APIReference/API_RestoreDBClusterToPointInTime.html |
+| __Backtrack API__ | https://docs.aws.amazon.com/AmazonRDS/latest/APIReference/API_BacktrackDBCluster.html |
