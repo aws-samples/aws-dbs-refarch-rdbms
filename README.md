@@ -82,6 +82,36 @@ AWS services are designed to work together, and most AWS services are consistent
 
 <table><tr><td><a href="/src/clone-backtrack-testing"><img src="/src/clone-backtrack-testing/thumbnail.png"/></a></td><td>Amazon Aurora supports powerful features to clone running databases in minutes, and to 'rewind' a database to any point in time using Aurora Backtrack. This can be a powerful capability to facilitate application architectures, for example service integration testing.</td></tr></table>
 
+## Migrating Databases
+
+## Migrating from Oracle to Aurora Mysql
+
+Migrating your Oracle database to Amazon Aurora can substantially reduce your database costs, while improving reliability and performance. Amazon Aurora is a fully-managed high-performance database with the security, availability, and reliability of a commercial database, at one-tenth the cost. AWS Database Migration Service and AWS Schema Conversion Tool make it easier to perform this migration with minimal disruption to the applications that rely on the source database.
+
+![migrate oracle to mysql](src/migration/migrate-oracle-mysql-dms.png)
+
+Use [this Migration site](https://aws.amazon.com/getting-started/projects/migrate-oracle-to-amazon-aurora) as a step-by-step guide to performing the migration, which includes a [CloudFormation](https://dms-sbs.s3.amazonaws.com/Oracle_Aurora_RDS_For_DMSDemo.template) Template to facilitate service configuration.
+
+## Migrating from Oracle to Aurora Postgres
+
+To migrate an Oracle database to Amazon Aurora with PostgreSQL Compatibility, you usually need to perform both automated and manual tasks. The automated tasks involve data migration and schema conversion using the AWS Database Migration Service (AWS DMS) and AWS Schema Conversion Tool (AWS SCT). The manual tasks involve post-migration “touch-ups” for certain database objects that can’t be migrated automatically.
+
+Use [this Migration playbook](https://d1.awsstatic.com/whitepapers/Migration/oracle-database-amazon-aurora-postgresql-migration-playbook.pdf) to plan and implement your migration process.
+
+## Migrating from Oracle to Amazon Redshift
+
+Migrating your Oracle data warehouse to Amazon Redshift can substantially improve query and data load performance, increase scalability, and save costs. Amazon Redshift is a fast, fully managed, petabyte-scale data warehouse that makes it simple and cost-effective to analyze all your data using your existing business intelligence tools. AWS Database Migration Service and AWS Schema Conversion Tool make it easier to migrate your schema and data from your Oracle data warehouse, both on-premises and on AWS, to Amazon Redshift without disruption to the applications that rely on the data source.
+
+![migrate oracle to redshift](src/migration/migrate-oracle-redshift-dms.png)
+
+Use [this Migration site](https://aws.amazon.com/getting-started/projects/migrate-oracle-to-amazon-redshift) as a step-by-step guide to performing the migration
+
+## Migrating from Microsoft SQL Server to Aurora Mysql
+
+To migrate a Microsoft SQL Server database to Amazon Aurora with Mysql Compatibility, you usually need to perform both automated and manual tasks. The automated tasks involve data migration and schema conversion using the AWS Database Migration Service (AWS DMS) and AWS Schema Conversion Tool (AWS SCT). The manual tasks involve post-migration “touch-ups” for certain database objects that can’t be migrated automatically.
+
+Use [this Migration playbook](https://d1.awsstatic.com/asset-repository/RDS%20Data%20Migration/SQL%20Server%20to%20Aurora%20MySQL%20Migration%20Playbook.pdf) to plan and implement your migration process.
+
 ## License Summary
 
 This sample code is made available under a modified MIT license. See the LICENSE file.
