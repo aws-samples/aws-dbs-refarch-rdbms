@@ -6,13 +6,12 @@
 
 [Amazon Relational Database Service (Amazon RDS)](https://aws.amazon.com/rds) makes it easy to set up, operate, and scale a relational database in the cloud. It provides cost-efficient and resizable capacity while automating time-consuming administration tasks such as hardware provisioning, database setup, patching and backups. It frees you to focus on your applications so you can give them the fast performance, high availability, security and compatibility they need.
 
-* When you buy a server, you get CPU, memory, storage, and IOPS, all bundled together. With Amazon RDS, these are split apart so that you can scale them independently. If you need more CPU, less IOPS, or more storage, you can easily allocate them.
-* Amazon RDS manages backups, software patching, automatic failure detection, and recovery.
-* To deliver a managed service experience, Amazon RDS doesn't provide shell access to DB instances, and it restricts access to certain system procedures and tables that require advanced privileges.
-* You can have automated backups performed when you need them, or manually create your own backup snapshot. You can use these backups to restore a database. The Amazon RDS restore process works reliably and efficiently.
-* You can get high availability with a primary instance and a synchronous secondary instance that you can fail over to when problems occur. You can also use MySQL, MariaDB, or PostgreSQL Read Replicas to increase read scaling.
+* When you buy a database server outside of AWS, you must purchase CPU, memory, storage, and IOPS all bundled together. With Amazon RDS, these are split apart so that you can scale them independently based on your workload. If you need more CPU, more IOPS, or more storage, you can easily allocate them on demand over time, and only pay for what you use.
+* [Amazon RDS manages backups](https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/USER_WorkingWithAutomatedBackups.html), [operating system and database software patching](https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/USER_UpgradeDBInstance.Maintenance.html), and [automatic failure detection, and recovery](https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/Concepts.MultiAZ.html).
+* RDS takes snapshots of your database automatically, and or you can manually create your own backup snapshots. You can use these backups to [restore a database to a point in time](https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/USER_PIT.html). 
+* You can get high availability with a primary instance and a synchronous secondary instance that you can fail over to if problems occur. You can also use [MySQL, MariaDB, or PostgreSQL Read Replicas](https://aws.amazon.com/rds/details/read-replicas) to increase read scaling.
 * You can use the database products you are already familiar with: MySQL, MariaDB, PostgreSQL, Oracle, Microsoft SQL Server.
-* In addition to the security in your database package, you can help control who can access your RDS databases by using AWS Identity and Access Management (IAM) to define users and permissions. You can also help protect your databases by putting them in a virtual private cloud.
+* In addition to the security in your database package, you can [control who can access your RDS databases](https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/UsingWithRDS.html) by using AWS Identity and Access Management (IAM) to define users and permissions. You can also help [protect your databases by putting them in a Virtual Private Cloud (VPC)](https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/USER_VPC.html).
 
 #### Amazon Aurora
 
@@ -21,15 +20,15 @@
 The following points illustrate how Aurora relates to the standard MySQL and PostgreSQL engines available in Amazon RDS:
 
 * You choose Aurora as a DB engine option when setting up new database servers through Amazon RDS.
-* Aurora takes advantage of the familiar Amazon Relational Database Service (Amazon RDS) features for management and administration. Aurora uses the Amazon RDS AWS Management Console interface, AWS CLI commands, and APIs to handle routine database tasks such as provisioning, patching, backup, recovery, failure detection, and repair.
+* Aurora takes advantage of the familiar RDS features for management and administration. Aurora provides the same Management Console interface, AWS CLI commands, and APIs to handle routine database tasks such as provisioning, patching, backup, recovery, failure detection, and repair.
 * Aurora management operations typically involve entire clusters of database servers that are synchronized through replication, instead of individual database instances. The automatic clustering, replication, and storage allocation make it simple and cost-effective to set up, operate, and scale your largest MySQL and PostgreSQL deployments.
-* You can bring data from Amazon RDS for MySQL and Amazon RDS for PostgreSQL into Aurora by creating and restoring snapshots, or by setting up one-way replication. You can use push-button migration tools to convert your existing Amazon RDS for MySQL and Amazon RDS for PostgreSQL applications to Aurora.
+* You can bring data from Amazon RDS for MySQL and Amazon RDS for PostgreSQL into Aurora by creating and restoring snapshots, [creating Aurora read replicas](https://docs.aws.amazon.com/AmazonRDS/latest/AuroraUserGuide/aurora-replicas-adding.html), or by [setting up bulk and real-time replication with Amazon Database Migration Service (DMS)](https://aws.amazon.com/dms). You can use push-button migration tools to convert your existing Amazon RDS for MySQL and Amazon RDS for PostgreSQL applications to Aurora.
 
 ## Use Cases 
 
 #### Operational Systems
 
-Amazon RDS  and Aurora is used as a highly available, no maintenance backend for operational systems. It has been a system of records for many e-commerce websites, ERP, CRM and HR systems where SQL databases widely used.
+Amazon RDS and Aurora is used as a highly available, no maintenance backend for operational systems. It has been a system of records for [many e-commerce websites, ERP, CRM and HR systems](https://aws.amazon.com/rds/customers) where SQL databases widely used.
 
 #### Small Size Analytic Data Stores
 
