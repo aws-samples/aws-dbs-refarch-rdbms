@@ -57,7 +57,7 @@ AWS services are designed to work together, and most AWS services are consistent
 
 ### [Multi-AZ](src/multi-az)
 
-<table><tr><td><a href="/src/multi-az"><img src="src/multi-az/thumbnail.png"/></a></td><td>This is the most basic architecture recommended for an RDS database. It uses a single database for all read and write operations while synchronously replicating data to a second availability zone for high availability. A security group for the database instances restricts database connections to only the application servers in a separate application security group, preventing all other connection attempts. Other architectures build on this approach to networking, so it is recommended to start by reviewing this architecture.</td></tr></table>
+<table><tr><td><a href="/src/multi-az"><img src="src/multi-az/thumbnail.png" /></a></td><td>This is the most basic architecture recommended for an RDS database. It uses a single database for all read and write operations while synchronously replicating data to a second availability zone for high availability. A security group for the database instances restricts database connections to only the application servers in a separate application security group, preventing all other connection attempts. Other architectures build on this approach to networking, so it is recommended to start by reviewing this architecture.</td></tr></table>
 
 ### [Single Region Scale Out Using RDS Read Replicas](src/single-region-scale-out)
 
